@@ -1,0 +1,24 @@
+# Site settings
+title: hiroki.kanaの日常
+header-img: img/home-bg.jpg
+email: hiroki.kana@gmail.com
+copyright_name: hiroki.kana
+description: "hiroki.kanaの何気ない日常"
+#baseurl: "/"
+url: "http://blog.hirokikana.com"
+twitter_username: hiroki_kana
+github_username:  hirokikana
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+#permalink: pretty
+permalink: /:categories/:title/
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","vendor"]
+
+gems: [jekyll-paginate, jekyll-feed]
