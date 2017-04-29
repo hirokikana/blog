@@ -19,6 +19,6 @@ highlighter: rouge
 #permalink: pretty
 permalink: /:categories/:title/
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","vendor"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","vendor", "Gemfile", "Gemfile.lock", "LICENSE", "circle.yml"]
 
 gems: [jekyll-paginate, jekyll-feed]
