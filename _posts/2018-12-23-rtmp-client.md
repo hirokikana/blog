@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTMPに理解を深めようとしたが深まらなかった話
+title: RTMPの理解を深めようとしたが深まらなかった話
 date: 2018/12/23 00:00:00 +09:00
 type: post
 published: true
