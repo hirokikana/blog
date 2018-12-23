@@ -166,11 +166,12 @@ RTMPのプロトコル上では任意データを送信することができる�
   - Wireshark / tcpdump はとても便利
   - Pythonでバイナリ操作をするならPython3
   - RTMPでは任意データも視聴者に簡単に送れるわけではない
+  
 ということがわかったのは良かったという気持ちではいます。
 
 ### 参考リンク
- - [RTMP 1.0 準拠のサーバーをGo言語で実装する](https://developers.cyberagent.co.jp/blog/archives/13739/#flow-after-receiving-command-message)
- - [Adobe’s Real Time Messaging Protoco](http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/rtmp/pdf/rtmp_specification_1.0.pdf)
+ - [RTMP 1.0 準拠のサーバーをGo言語で実装する](https://developers.cyberagent.co.jp/blog/archives/13739/)
+ - [Adobe's Real Time Messaging Protocol](http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/rtmp/pdf/rtmp_specification_1.0.pdf)
  - [arut/nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module/)
  - [Real-Time Messaging Protocol - Wikipedia](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol)
  - [Action Message Format -- AMF0](https://www.adobe.com/content/dam/acom/en/devnet/pdf/amf0-file-format-specification.pdf)
