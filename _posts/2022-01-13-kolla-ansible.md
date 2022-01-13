@@ -3,7 +3,7 @@ layout: post
 title: Kolla Ansible を利用して VirtualBox 上の仮想マシンに OpenStack をデプロイする
 date: 2022/01/13 22:50:00
 type: post
-published: false
+published: true
 status: publish
 categories:
  - dev
@@ -13,7 +13,9 @@ tags:
 ---
 ## Kolla Ansible とは
 Kolla Ansible とは OpenStack の各サービスやコンポーネントを Docker コンテナの形で導入する仕組みです。
-もともとは [[https://logmi.jp/tech/articles/320926][OpenStackコンポーネントをKubernetes上に構築　Yahoo! JAPAN巨大インフラの運用と舞台裏 - Part1 - ログミーTech]] この OpenStack のコンポーネントをコンテナにし Kubernetes で管理している仕組みをみて、自前でコンテナイメージを作ろうとしていました。
+
+もともとは [OpenStackコンポーネントをKubernetes上に構築　Yahoo! JAPAN巨大インフラの運用と舞台裏 - Part1 - ログミーTech](https://logmi.jp/tech/articles/320926) この OpenStack のコンポーネントをコンテナにし Kubernetes で管理している仕組みをみて、自前でコンテナイメージを作ろうとしていました。
+
 その中で、 Kolla Ansible の存在を知り「これでいいじゃん」となり利用してみたという経緯です。
 実際に利用してみたところ(手動導入時と比べて)非常に簡単に OpenStack を導入することができたため、利用方法の備忘録として残すことにしました。
 
@@ -25,7 +27,7 @@ NIC やディスクが手軽に追加できたりしますしね。
 理屈上、 Windows でも動くとは思うんですが、検証してないのとちょっとした癖があってこのままの手順ではないかもしれません。
 
 ## VirtualBox 特有の設定等
-VirtualBox で検証する際特有の設定としては下記があります。
+VirtualBox 特有の設定としては下記があります。
  - Nested Virtualization を有効にする
  - それぞれの NIC でプロミスキャスモードを許可する
  - ディスクのサイズを拡張する
@@ -254,6 +256,6 @@ OpenStack の導入はコマンドひとつで導入できず、時間や手間�
 また、それぞれのモジュールが Docker コンテナの形で動作するため、必要なくなったらコンテナを削除するだけできれいな環境に戻すことができたりする点も利点かと思います。
 
 ## 参考リンク
- - [1] [[https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html#][Quick Start — kolla-ansible 13.1.0.dev128 documentation]]
- - [2] [[https://www.vagrantup.com/docs/disks/usage][Vagrant Disk Usage | Vagrant by HashiCorp]]
- - [3] [[https://docs.oracle.com/cd/E90981_01/E90982/html/kolla-openstack-network.html][Configuring Network Interfaces for OpenStack Networks]]
+ - [1] [Quick Start kolla-ansible 13.1.0.dev131 documentation](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)
+ - [2] [Vagrant Disk Usage  Vagrant by HashiCorp](https://www.vagrantup.com/docs/disks/usage)
+ - [3] [Configuring Network Interfaces for OpenStack Networks](https://docs.oracle.com/cd/E90981_01/E90982/html/kolla-openstack-network.html)
